@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta lang="en-us">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="script/main.js">
+    <link rel="stylesheet" type="text/css" href="https://fonts.google.com/?selection.family=Nunito">
+
+</head>
+<body>
+  <a href="login.html">
+<button type="login" >Login/Signup</button></a>
+	<header> 
+        <h1 class="page"><a href="index.html">SH<span>O</span>ES</a></h1>
+
+            </header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="collection.html">Catogories</a></li>
+                    
+                     <li><a href="contact.html">Galary</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+</div>
+ <h1 class="abc">Welcome TO SHOES STORE</h1>
+
+
+
+<section>
+<article>
+    <h2>NIKE</h2>
+    <img class="pin" src="images/nike.png" alt="mobile_assoceries">
+</article>
+<article>
+    <h2>JORDAN</h2>
+    <img class="pin" src="images/jordan.png">
+</article>
+
+<article>
+    <h2>UNDER ARMOR</h2>
+    <img class="pin" src="images/under_armor.jpg">
+</article>
+<article>
+    <h2>ADIDAS</h2>
+    <img class="pin" src="images/adidas.png">
+</article>
+</section>
+<br>
+<br>
+
+<div class="slideshow">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="images/besmobiles-accessories2.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="images/phone-accessories2.png" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="images/Shoes3.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="images/mini2.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="images/clothes3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+<section>
+<article>
+    <h2>PENGUIN</h2>
+    <img class="pin" src="images/nike.png" alt="mobile_assoceries">
+</article>
+<article>
+    <h2>LACROSSE</h2>
+    <img class="pin" src="images/jordan.png">
+</article>
+
+<article>
+    <h2>NAOT</h2>
+    <a href="collection.html">
+    <img class="pin" src="images/under_armor.jpg" ></a>
+</article>
+<article>
+    <h2>ADIDAS</h2>
+    <img class="pin" src="images/adidas.png">
+</article>
+ 
+</section>
+
+
+<div class="container2">
+
+  <article>
+    <h2>Queots</h2>
+    <p>“Time you enjoy wasting is not wasted time.” <br>-Marthe-Troly-Curtin</p><br>
+    <p>“There comes a time when the world gets quiet and the only thing left is your own heart. So you'd better learn the sound of it. Otherwise you'll never understand what it's saying.”<br>-Sarah Dessen</p><br>
+    <p>“It has been said, 'time heals all wounds.' I do not agree. The wounds remain. In time, the mind, protecting its sanity, covers them with scar tissue and the pain lessens. But it is never gone.”<br>-Rose Fitzgerald Kennedy</p><br>
+    <p>“Don't waste your time with explanations: people only hear what they want to hear.”<br>-Paulo Coelho</p>
+
+  </article>
+  <aside>
+    <h2></h2>
+    <p>"Unfortunately, the clock is ticking, the hours are going by.The past increase, the future recedes. possibilities decreasing, regrets mounting"<br>-Haruki Murakami</p>
+  </aside>
+</div>
+
+ <div class="footer clearfix">   
+        <div class="container_12">    
+            <p class="grid_12">
+                <a href="">Legal Information</a> | <a href="">Privacy       Policy</a> | <a href="">Copyright &copy; Pedal Faster 2011</a></p>   
+            </div>  
+        </div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
